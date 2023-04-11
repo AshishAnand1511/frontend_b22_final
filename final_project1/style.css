@@ -1,0 +1,229 @@
+@font-face {
+    font-family: america;
+    src: url(./GT-America-Compressed-Bold.ttf);
+}
+@font-face {
+    src: url(./GT-America-Compressed-Black-Trial.otf);
+    font-family:america-b;
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding:10px 15px;
+    color: rgb(196, 85,8);
+}
+#nav h1{
+    font-size: 25px;
+    font-family:america;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?rect=1,0,2879,1796&bg=F2F1EC&w=2650&h=1653&auto=format);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#page1 h1{
+    font-family: america-b;
+    text-transform: uppercase;
+    color:rgb(196,85,6);
+    font-size: 14.5vw;
+    font-weight: 500;
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+    z-index: 99;
+    /* text-align: center; */
+}
+#page1 h1::before{
+    position: absolute;
+    content: "Bownds Ranches. est.1885";
+    font-size: 15px;
+    font-weight: 500;
+    left: .7vw;
+    text-transform: uppercase;
+    font-family:gilroy;
+    bottom: 16vw;
+    z-index: 99;
+
+}
+#page1 h1::after{
+    position: absolute;
+    content: "marketing & selling texas ranches";
+    font-size: 15px;
+    font-weight: 500;
+    right: 1vw;
+    text-transform: uppercase;
+    font-family:gilroy;
+    display: inline-block;
+    bottom: 16vw;
+    z-index: 99;
+}
+#page1 svg{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    scale: 1.2;
+    cursor: pointer;
+    transform: translate(-50%,50%);
+    z-index: 99;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    top: 0;
+    z-index: 9;
+    position: relative;
+}
+#cursor{
+    position: fixed;
+    height: 2.5vw;
+    width: 6vw;
+    background-color: black;
+    /* z-index: 999; */
+    background-image: url(./Screenshot\ 2023-04-09\ 212824.png);
+    scale: 0;
+    transition: all linear .1s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: america-b;
+    word-spacing: 1vh;
+    background-size: cover;
+    background-position: center;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=0,1,2724,1935&w=1440&h=1023&auto=format);
+    background-size: cover;
+    background-position: 0 -30%;
+}
+#page2>h1{
+    position: relative;
+    font-size:12vw;
+    width: 100%;
+    /* height: 80vh; */
+    font-family: america;
+    /* font-weight: 500; */
+    color: #111;
+    letter-spacing: -4px;
+    line-height:0.8;
+    text-transform: uppercase;
+    word-spacing:-16px;
+    text-align: center;
+    padding: 90px;
+    
+}
+#page2>h1::before{
+    content:"the representation you deserve";
+    font-family: gilroy;
+    position: absolute;
+    font-size: 1vw;
+    left:11%;
+    font-weight: 500;
+    width: 12vw;
+    bottom: 7%;
+    letter-spacing:0;
+    line-height:1;
+    text-transform: uppercase;
+    word-spacing:0;
+    text-align: left;
+}
+#page2>h1::after{
+    content:"one of America's Best Brokerages";
+    font-family: gilroy;
+    position: absolute;
+    font-size: 1vw;
+    right:11%;
+    font-weight: 500;
+    width: 10vw;
+    bottom: 7%;
+    letter-spacing:0;
+    line-height:1;
+    text-transform: uppercase;
+    word-spacing:0;
+    text-align: right;
+}
+#image1{
+    height: 100vh;
+    width: 45vw;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    rotate: -5deg;
+    /* transition: all linear .1s; */
+}
+#image2{
+    height: 100px;
+    position: absolute;
+    left: 66%;
+    top:68%;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+#page3 h1{
+    font-family: america;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10%;
+    font-size: 12.7vw;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    word-spacing: -10px;
+    line-height: 0.8;
+    width:100%;
+    text-align: center;
+}
+#page3 h1::after{
+    content: "Third generation family-owned Ranch Brokerage";
+    font-family: gilroy;
+    position: absolute;
+    font-size: .93vw;
+    right:38%;
+    font-weight: 500;
+    /* width: 10vw; */
+    bottom: -8%;
+    letter-spacing:0;
+    /* line-height:1; */
+    text-transform: uppercase;
+    word-spacing:0;
+    /* text-align: right; */
+}
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
