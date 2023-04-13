@@ -63,7 +63,7 @@ gsap.to("#image1",{
         scroller:"#main",
         scrub:3,
         // markers:true,
-        start:"top 60%",
+        start:"top 70%",
         // pin:true
     }
 })

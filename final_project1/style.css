@@ -118,15 +118,16 @@ html,body{
     background-position: center;
 }
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
-    background-color: #fff;
+    /* background-color: #fff; */
     background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=0,1,2724,1935&w=1440&h=1023&auto=format);
     background-size: cover;
-    background-position: 0 -30%;
+    background-position: 0 -20vh;
 }
 #page2>h1{
+    top: -35vh;
     position: relative;
     font-size:12vw;
     width: 100%;
@@ -134,6 +135,10 @@ html,body{
     font-family: america;
     /* font-weight: 500; */
     color: #111;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=0,1,2724,1935&w=1440&h=1023&auto=format);
+    background-size: cover;
+    background-position: 0 32vh;
+    background-color: #fff;
     letter-spacing: -4px;
     line-height:0.8;
     text-transform: uppercase;
@@ -175,9 +180,9 @@ html,body{
 #image1{
     height: 100vh;
     width: 45vw;
-    position: absolute;
+    position: relative;
     left: 25%;
-    top: 55%;
+    top: -60vh;
     rotate: -5deg;
     /* transition: all linear .1s; */
 }
@@ -185,19 +190,13 @@ html,body{
     height: 100px;
     position: absolute;
     left: 66%;
-    top:68%;
+    top:35vh;
 }
-#page3{
-    height: 100vh;
-    width: 100%;
-    /* background-color: red; */
-    position: relative;
-}
-#page3 h1{
+#page2 h2{
     font-family: america;
     font-weight: 500;
     position: absolute;
-    bottom: 10%;
+    top: 115vh;
     font-size: 12.7vw;
     text-transform: uppercase;
     letter-spacing: -5px;
@@ -206,7 +205,7 @@ html,body{
     width:100%;
     text-align: center;
 }
-#page3 h1::after{
+#page2 h2::after{
     content: "Third generation family-owned Ranch Brokerage";
     font-family: gilroy;
     position: absolute;
@@ -221,9 +220,9 @@ html,body{
     word-spacing:0;
     /* text-align: right; */
 }
-#page4{
-    position: relative;
+#page3{
     height: 100vh;
     width: 100%;
-    background-color: #000;
+    background-color: red;
+    /* position: relative; */
 }
