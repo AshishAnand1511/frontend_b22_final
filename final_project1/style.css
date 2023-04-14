@@ -28,6 +28,9 @@ html,body{
     width: 100%;
     padding:10px 15px;
     color: rgb(196, 85,8);
+    display: flex;
+    /* text-align: center; */
+    
 }
 #nav h1{
     font-size: 25px;
@@ -35,6 +38,14 @@ html,body{
     text-transform: uppercase;
     font-weight: 900;
     cursor: pointer;
+    width: 20%;
+    /* background-color: red; */
+}
+#nav :nth-child(3){
+    text-align: right;
+}
+#nav :nth-child(4){
+    text-align: right;
 }
 #page1{
     height: 100vh;
@@ -82,14 +93,18 @@ html,body{
     bottom: 16vw;
     z-index: 99;
 }
-#page1 svg{
+svg{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     scale: 1.2;
     cursor: pointer;
-    transform: translate(-50%,50%);
+    transform: translate(-50%,-50%);
     z-index: 99;
+    fill: rgb(196, 85,8);
+}
+svg path{
+    fill: inherit;
 }
 #overlay{
     height: 100%;
@@ -125,9 +140,10 @@ html,body{
     background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=0,1,2724,1935&w=1440&h=1023&auto=format);
     background-size: cover;
     background-position: 0 -20vh;
+    padding-bottom: 20px;
 }
 #page2>h1{
-    top: -35vh;
+    top: -15vh;
     position: relative;
     font-size:12vw;
     width: 100%;
@@ -137,14 +153,14 @@ html,body{
     color: #111;
     background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=0,1,2724,1935&w=1440&h=1023&auto=format);
     background-size: cover;
-    background-position: 0 32vh;
+    background-position: 0 0vh;
     background-color: #fff;
     letter-spacing: -4px;
     line-height:0.8;
     text-transform: uppercase;
     word-spacing:-16px;
     text-align: center;
-    padding: 90px;
+    padding: 50px;
     
 }
 #page2>h1::before{
@@ -155,7 +171,7 @@ html,body{
     left:11%;
     font-weight: 500;
     width: 12vw;
-    bottom: 7%;
+    bottom: 0%;
     letter-spacing:0;
     line-height:1;
     text-transform: uppercase;
@@ -170,7 +186,7 @@ html,body{
     right:11%;
     font-weight: 500;
     width: 10vw;
-    bottom: 7%;
+    bottom: 0%;
     letter-spacing:0;
     line-height:1;
     text-transform: uppercase;
@@ -182,7 +198,7 @@ html,body{
     width: 45vw;
     position: relative;
     left: 25%;
-    top: -60vh;
+    top: -40vh;
     rotate: -5deg;
     /* transition: all linear .1s; */
 }
@@ -190,13 +206,13 @@ html,body{
     height: 100px;
     position: absolute;
     left: 66%;
-    top:35vh;
+    top:45vh;
 }
 #page2 h2{
     font-family: america;
     font-weight: 500;
     position: absolute;
-    top: 115vh;
+    top: 125vh;
     font-size: 12.7vw;
     text-transform: uppercase;
     letter-spacing: -5px;
@@ -221,8 +237,81 @@ html,body{
     /* text-align: right; */
 }
 #page3{
+    padding: 130px;
     height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: #111;
+    position: relative;
+}
+#overlayp3{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#page3 h1{
+    font-family: america;
+    word-spacing: -10px;
+    color: #f9f5eb;
+    font-size: 8vw;
+    line-height: .9;
+    width: 100%;
+    left: auto;
+    right: auto;
+    text-align: center;
+}
+#page3 p{
+    margin-top: 20px;
+    font-family: gilroy;
+    /* word-spacing: -10px; */
+    color: #f9f5eb;
+    font-size: 1vw;
+    line-height: 1.2;
+    width: 40%;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#page3 h2{
+    font-family: america;
+    word-spacing: -10px;
+    color: #f9f5eb;
+    font-size: 8vw;
+    line-height: .9;
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 5px #111;
+}
+
+#p3img{
+    /* top: 100px; */
+    height: 150px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/d3370821d518e13fd16b439a1fb420c72e416641-581x383.png/brandon_bownds.png?rect=0,30,581,325&bg=F2F1EC&w=320&h=179&fit=min&auto=format);
+    background-size: cover;
+    background-position: top;
+    width: 130px;
+    background-color: white;
+    position:absolute;
+    opacity: 0;
+    transition: all linear .2s;
+}
+#p3img h5{
+    position: absolute;
+    font-family: america;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    word-spacing: -1px;
+    background-color: #fff;
+    bottom: 0;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
     /* position: relative; */
 }
