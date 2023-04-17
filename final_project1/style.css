@@ -163,6 +163,10 @@ svg path{
     padding: 50px;
     
 }
+#page2 h1 span{
+    font-family: america;
+    /* font-size: ; */
+}
 #page2>h1::before{
     content:"the representation you deserve";
     font-family: gilroy;
@@ -235,6 +239,10 @@ svg path{
     text-transform: uppercase;
     word-spacing:0;
     /* text-align: right; */
+}
+#page2 h2 span{
+    font-family: america;
+    font-size: 12.7vw;
 }
 #page3{
     padding: 130px;
@@ -310,8 +318,101 @@ svg path{
     bottom: 0;
 }
 #page4{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: #111;
-    /* position: relative; */
+    position: relative;
+}
+.p4anime{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #fff;
+    /* height: 150px; */
+}
+.p4anime>h1{
+    /* position: absolute; */
+    font-family: america;
+    color: #fff;
+    font-size: 150px;
+    cursor: default;
+    top: 0;
+    transition: opacity ease-in .2s;
+    text-transform: uppercase;
+}
+.p4txt{
+    align-items: center;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* display: flex; */
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  
+    transition: opacity ease-in .2s;
+}
+.p4anime:hover .p4txt{
+    opacity: 1;
+}
+.p4anime:hover h1{
+    opacity: 0;
+}
+.p4txt h2{
+    display: inline-block;
+    font-family: america;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 150px;
+    animation-name: motion;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* background-color: red; */
+    margin-left: -5px;
+    position: relative;
+    padding-right: 70px;
+    cursor: default;
+}
+@keyframes motion{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.p4txt h2 img{
+    position: absolute;
+    margin: 10px;
+    height: 25px;
+    rotate: 45deg;
+    top: 50%;
+    transform: translate(-60%,0);
+    right: 0;
+}
+#p4img{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/5d2283e7c67a6fc4a7a6b1b1d621265e32753ebd-2896x2048.png/image.png?rect=691,0,1514,2048&bg=F2F1EC&w=420&h=568&fit=min&auto=format);
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in .2s;
+
+}
+#page4>button{
+    padding: 10px;
+    font-family: america;
+    background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+    border: none;
+    background-size: cover;
+    position: absolute;
+    z-index: 99;
+    transition: all ease-in .2s;
 }

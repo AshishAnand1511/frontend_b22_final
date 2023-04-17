@@ -151,3 +151,30 @@ overlayp3.addEventListener("mousemove",(dets)=>{
 overlayp3.addEventListener("mouseleave",()=>{
   p3img.style.opacity = 0
 })
+
+gsap.to("#page1 h1",{
+  onstart:function(){
+    $('#page1 h1').textillate({ in: { effect: 'fadeInUp' } });
+  }
+})
+gsap.to("#page2 h1",{
+  onstart:function(){
+    $('#page2 h1').textillate({ in: { effect: 'fadeInUp' } });
+  }
+})
+gsap.to("#page2 h2",{
+  onstart:function(){
+    $('#page2 h2').textillate({ in: { effect: 'fadeInUp' } });
+  }
+})
+gsap.to("#page3 h1",{
+  onstart:function(){
+    $('#page3 h1').textillate({ in: { effect: 'fadeInUp' } });
+  }
+})
+document.querySelector("#page4").addEventListener("mousemove",function(dets){
+  document.querySelector("#page4>button").style.left = dets.x +"px"
+  document.querySelector("#page4>button").style.top = dets.y +"px"
+  document.querySelector("#p4img").style.left = dets.x +"px"
+  document.querySelector("#p4img").style.top = dets.y +"px"
+})
